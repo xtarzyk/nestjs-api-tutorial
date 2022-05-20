@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  docker101tutorial:
+    image: postgres:14
+    ports:
+      - 5432
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: kajtek123
+      POSTGRES_DB: nest
+    networks:
+      - freecodecamp
+networks:
+  freecodecamp:
